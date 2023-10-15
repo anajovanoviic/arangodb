@@ -4,4 +4,3 @@ FOR flight IN flights
     FILTER flight.TailNum == "N592ML"
     RETURN flight
 
-// Above 
