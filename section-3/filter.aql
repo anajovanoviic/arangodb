@@ -1,0 +1,7 @@
+// Search flights collection inside GETTING-STARTED db and find all flights for a specific plane
+
+FOR flight IN flights
+    FILTER flight.TailNum == "N592ML"
+    RETURN flight
+
+// Above 
