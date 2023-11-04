@@ -1,0 +1,23 @@
+//Simple query that locates the airports in Texas and displays their location on a map
+
+FOR airport IN airports
+FILTER airport.state == "TX"
+RETURN airport
+
+//GEO_POINT() function constructs geojson point when given long and lat
+
+FOR airport IN airports
+FILTER airport.state == "TX"
+RETURN GEO_POINT(airport.long, airport.lat)
+
+//Find all the airports within 50km range of this one airport
+
+FOR airport IN airports
+FILTER GEO_DISTANCE([-95.01792778,30.68586111], [airport.long, airport.lat]) <= 50000
+RETURN GEO_POINT(airport.long, airport.lat)
+
+//If we want to return documents
+
+FOR airport IN airports
+FILTER GEO_DISTANCE([-95.01792778,30.68586111], [airport.long, airport.lat]) <= 50000
+RETURN airport
