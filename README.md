@@ -15,4 +15,4 @@ After creating above index the same query runs in 1,250 ms.
 
 **18 - GeoJSON** <br>
 
-GeoJSON is format for geographical features > see section3/geoJson.aql with examples.
+GeoJSON is a format for geographical features > see *section3/geoJson.aql* with examples.
