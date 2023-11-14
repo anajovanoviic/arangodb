@@ -1,0 +1,12 @@
+// 3.19
+
+// screens at the airport terminal
+
+FOR airport IN airports
+    FILTER airport.city == "Dallas"
+    FOR flight IN flights
+      FILTER flight._to == airport._id 
+      RETURN {
+        "airport": airport.name,
+        "flight": flight.FlightNum
+      }
