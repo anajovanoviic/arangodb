@@ -1,0 +1,21 @@
+// 3.20
+// find the number of airports in each state
+
+FOR airport IN airports
+   COLLECT state = airport.state 
+   RETURN state
+
+FOR airport IN airports
+   COLLECT state = airport.state WITH COUNT INTO total
+      RETURN {
+      State: state,
+      "Total Airports": total
+      }
+
+FOR airport IN airports
+   COLLECT state = airport.state WITH COUNT INTO total
+   SORT total DESC
+      RETURN {
+      State: state,
+      "Total Airports": total
+      }

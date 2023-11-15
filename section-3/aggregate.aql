@@ -1,0 +1,8 @@
+FOR flight IN flights
+   COLLECT AGGREGATE
+   minDistance = MIN(flight.Distance),
+   maxDistance = MAX(flight.Distance)
+   RETURN {
+       "Shortest Flight": minDistance,
+       "Longest Flight": maxDistance
+   }
