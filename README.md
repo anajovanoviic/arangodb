@@ -1,4 +1,6 @@
 # arangodb
+
+[Course Materials & Resources](https://arangodb.com/learn/first-day/udemy/)
 Notes from arangodb course
 
 Run arangodb via terminal: `arangosh`
@@ -21,3 +23,10 @@ GeoJSON is a format for geographical features > see *section3/geoJson.aql* with 
 
 - Joins represent relationship between multiple collections.
 - Instead of JOIN keyword (used in SQL), join is performed using nested FOR loops > *secion3/join.aql*.
+
+**20 - COLLECT** <br>
+- grouping of results
+
+**21 - AGGREGATE** <br>
+- Optimizes resource utilization
+
