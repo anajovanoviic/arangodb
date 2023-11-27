@@ -1,6 +1,7 @@
 # arangodb
 
-[Course Materials & Resources](https://arangodb.com/learn/first-day/udemy/)
+[Course Materials & Resources](https://arangodb.com/learn/first-day/udemy/) <br>
+
 Notes from arangodb course
 
 Run arangodb via terminal: `arangosh`
