@@ -23,7 +23,7 @@ GeoJSON is a format for geographical features > see *section3/geoJson.aql* with 
 **19 - Joins** <br>
 
 - Joins represent relationship between multiple collections.
-- Instead of JOIN keyword (used in SQL), join is performed using nested FOR loops > *secion3/join.aql*.
+- Instead of JOIN keyword (used in SQL), join is performed using nested FOR loops > *section3/join.aql*.
 
 **20 - COLLECT** <br>
 - grouping of results
