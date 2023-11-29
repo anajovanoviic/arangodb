@@ -35,5 +35,8 @@ GeoJSON is a format for geographical features > see *section3/geoJson.aql* with 
 **22-27 - Graphs** <br>
 <img width="859" alt="arango" src="https://github.com/anajovanoviic/arangodb/assets/51513732/41e6bda7-3df8-4c78-89fc-632a725a54ad">
 
+**Section 5: Fox Microservice Framework** <br>
+
+
 
 
