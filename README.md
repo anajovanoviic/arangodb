@@ -37,6 +37,9 @@ GeoJSON is a format for geographical features > see *section3/geoJson.aql* with 
 
 **Section 5: Fox Microservice Framework** <br>
 
+Example for testing /entries endpoint:
+
+
 
 
 
