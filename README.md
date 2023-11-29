@@ -38,6 +38,7 @@ GeoJSON is a format for geographical features > see *section3/geoJson.aql* with 
 **Section 5: Fox Microservice Framework** <br>
 
 Example for testing /entries endpoint:
+
 ![Untitled picture](https://github.com/anajovanoviic/arangodb/assets/51513732/82b88362-5c21-4fb5-807b-44fdc5242ddf)
 
 
