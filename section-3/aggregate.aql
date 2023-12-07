@@ -1,3 +1,4 @@
+//3.21
 FOR flight IN flights
    COLLECT AGGREGATE
    minDistance = MIN(flight.Distance),
