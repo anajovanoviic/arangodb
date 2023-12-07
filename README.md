@@ -2,6 +2,8 @@
 
 [Course Materials & Resources](https://arangodb.com/learn/first-day/udemy/) <br>
 
+example datasets - https://github.com/arangodb/example-datasets <br>
+
 Notes from arangodb course
 
 Run arangodb via terminal: `arangosh`
