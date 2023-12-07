@@ -4,8 +4,6 @@
 
 example datasets - https://github.com/arangodb/example-datasets <br>
 
-Notes from arangodb course
-
 Run arangodb via terminal: `arangosh`
 
 **Section 3** <br>
