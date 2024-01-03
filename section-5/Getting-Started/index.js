@@ -4,6 +4,7 @@ const router = createRouter();
 const joi = require('joi'); // imported from npm
 const db = require('@arangodb').db;
 const foxxColl = db._collection('myFoxxCollection');
+const aql = require('@arangodb').aql;
 
 // Registers the router with the Foxx service context
 module.context.use(router);
@@ -34,3 +35,16 @@ router.post('/entries', function (req, res) {
 .response(joi.object().required(), 'Entry stored in the collection.')
 .summary('Store an entry.')
 .description('Stores and entry in "myFoxxCollection" collection.')
+
+router.get('/entries', function (req, res) {
+    const keys = db._query(aql`
+      FOR entry IN ${foxxColl}
+      RETURN entry._key
+      `);
+      res.send(keys);
+})
+.response(joi.array().items(
+    joi.string().required()
+).required(), 'List of entry keys.')
+.summary('List entry keys')
+.description('Assembles a list of keys of entries in the collection')
